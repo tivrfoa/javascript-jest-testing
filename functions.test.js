@@ -48,3 +48,9 @@ test('Case sensitive search', () => {
 test('Case insensitive search', () => {
     expect('have a nice day').toMatch(/nicE/i);
 });
+
+// Arrays
+test('admin should be in usernames', () => {
+    const usernames = ['john', 'karen', 'admin'];
+    expect(usernames).toContain('admin');
+});
