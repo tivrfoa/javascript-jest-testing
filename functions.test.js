@@ -24,3 +24,17 @@ test('User object', () => {
         lastName: 'World'
     });
 });
+
+test('toBe doesnt work for objects. Using toEqual', () => {
+    expect(functions.createUser('Hello', 'World')).toEqual({
+        firstName: 'Hello',
+        lastName: 'World'
+    });
+});
+
+test('Numeric boundary', () => {
+    const load1 = 800;
+    const load2 = 700;
+    expect(load1 + load2).toBeGreaterThan(1499);
+    expect(load1 + load2).toBeLessThan(1501);
+})
