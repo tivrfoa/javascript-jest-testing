@@ -17,3 +17,10 @@ test('Should be falsy', () => {
     expect(functions.checkValue(null)).toBeFalsy();
     expect(functions.checkValue(undefined)).toBeFalsy();
 });
+
+test('User object', () => {
+    expect(functions.createUser('Hello', 'World')).toMatchObject({
+        firstName: 'Hello',
+        lastName: 'World'
+    });
+});
