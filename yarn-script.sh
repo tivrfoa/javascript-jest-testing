@@ -9,3 +9,7 @@ yarn add -D babel-plugin-transform-es2015-modules-commonjs
 
 yarn run jest
 
+yarn add axios
+
+# jsonplaceholder.typicode.com/users/1
+
