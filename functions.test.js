@@ -38,3 +38,13 @@ test('Numeric boundary', () => {
     expect(load1 + load2).toBeGreaterThan(1499);
     expect(load1 + load2).toBeLessThan(1501);
 })
+
+// Regex
+test('Case sensitive search', () => {
+    expect('have a nice day').not.toMatch(/nicE/);
+    expect('have a nice day').toMatch(/nice/);
+});
+
+test('Case insensitive search', () => {
+    expect('have a nice day').toMatch(/nicE/i);
+});
