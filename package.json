@@ -1,0 +1,14 @@
+{
+  "name": "javascript-jest",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.8.0"
+  }
+}
