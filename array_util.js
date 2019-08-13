@@ -1,4 +1,5 @@
 "use strict";
+// https://github.com/Microsoft/TypeScript/issues/9545
 // $ yarn add @types/node
 // $ tsc array_util.ts --lib es6
 exports.__esModule = true;
@@ -14,10 +15,6 @@ function chunkArray(arr, len) {
         }
         response.push(chunk);
     }
-    console.log(chunks);
     return response;
 }
-console.log(chunkArray([1, 2, 3], 3));
-console.log(chunkArray([1, 2, 3], 2));
-console.log(chunkArray([1, 2, 3], 1));
 exports["default"] = chunkArray;

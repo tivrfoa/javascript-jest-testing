@@ -16,15 +16,8 @@ function chunkArray(arr: number[], len: number): number[][] {
         }
         response.push(chunk);
     }
-
-    console.log(chunks);
+    
     return response;
 }
-
-console.log(chunkArray([1, 2, 3], 3));
-
-console.log(chunkArray([1, 2, 3], 2));
-
-console.log(chunkArray([1, 2, 3], 1));
 
 export default chunkArray;
