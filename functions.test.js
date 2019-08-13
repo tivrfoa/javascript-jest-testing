@@ -70,3 +70,19 @@ test('username Bret', async () => {
     const data = await functions.fetchUser();
     expect(data.username).toEqual('Bret');
 });
+
+const nameCheck = () => console.log('Checking name ...');
+
+// describe is used to create a block of tests
+describe('Checking names', () => {
+
+    beforeEach(() => nameCheck());
+
+    test('User is Jeff', () => {
+        expect('Jeff').toBe('Jeff');
+    });
+
+    test('User is Karen', () => {
+        expect('Karen').toBe('Karen');
+    });
+});
