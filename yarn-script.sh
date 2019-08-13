@@ -13,3 +13,4 @@ yarn add axios
 
 # jsonplaceholder.typicode.com/users/1
 
+yarn run testwatch
