@@ -86,3 +86,18 @@ describe('Checking names', () => {
         expect('Karen').toBe('Karen');
     });
 });
+
+// each ...
+describe.each([
+    [0, 0, 0],
+    [1, 0, 1],
+    [1, 1, 2],
+    [2, 1, 3],
+])(
+    'add(%i, %i)',
+    (a, b, expected) => {
+        test('should return %s when adding %s to %s', () => {
+            expect(a + b).toBe(expected);
+        });
+    }
+);
